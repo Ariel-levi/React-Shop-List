@@ -1,10 +1,16 @@
-import "./App.css";
+// import logo from './logo.svg';
+import './App.css';
+import AppShopping from './comps_shopping/appShopping';
+// import AppHw from './comps_hw/appHw';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello From React </h1>
-    </div>
+      <div className="App">
+        <AppShopping />
+        {/* <AppHw /> */}
+      </div>   
   );
 }
 
