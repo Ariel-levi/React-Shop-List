@@ -1,10 +1,15 @@
-import "./App.css";
+// import logo from './logo.svg';
+import './App.css';
+import AppRoutes from './appRoutes';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello From React </h1>
-    </div>
+      <div className="App">
+        <AppRoutes />
+      </div>
+   
   );
 }
 
