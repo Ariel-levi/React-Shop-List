@@ -1,0 +1,16 @@
+.shipping h1 {
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px blue, 0 -10px 20px silver, 0 -18px 40px green;
+}
+
+.shipping input {
+  border-radius: 16px;
+}
+
+.shipping .box {
+  background: silver;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+/*# sourceMappingURL=shipping.css.map */

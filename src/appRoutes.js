@@ -1,18 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes , Route} from 'react-router-dom';
-import Home from './comps/home';
-import Layout from './comps/layout';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Graph from "./comps/graph";
+import HeaderLay from "./comps/headerLay";
+import Home from "./comps/home";
+import AppShipping from "./shipping_comps/appShipping";
 
-function AppRoutes(props){
-  return(
-    <Router>
+function AppRoutes(props) {
+  return (
+    <BrowserRouter>
+      {/* header */}
+      <HeaderLay />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
+        <Route index element={<Home />} />
+        <Route path="/shipping" element={<AppShipping />} />
+        <Route path="/graph" element={<Graph />} />
       </Routes>
-    </Router>
-  )
+      {/* footer */}
+    </BrowserRouter>
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;
